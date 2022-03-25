@@ -8,15 +8,15 @@ const createNav =() => {
       </div>
       <div class="left__links">
         <div class="link__collection">
-          <a href="">Home</a>
-          <a href="">Products</a>
+          <a href="http://127.0.0.1:5502/client/index.html#index.html">Home</a>
+          <a href="#product.html">Products</a>
         </div>
       </div>
     </div>
     <div class="right">
       <div class="one">
-        <a href="">Home</a>
-        <a href="">Products</a>
+        <a href="http://127.0.0.1:5502/client/login.html">Signin</a>
+        <a href="http://127.0.0.1:5502/client/register.html">Register</a>
       </div>
       <div class="two">
         <div class="img__container">
