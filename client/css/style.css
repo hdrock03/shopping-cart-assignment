@@ -261,5 +261,6 @@ body {
   height: 3rem;
   text-align: center;
   background-color: #eee5e5;
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=style.css.map */
