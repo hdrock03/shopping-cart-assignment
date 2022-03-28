@@ -9,7 +9,7 @@ const createNav =() => {
       <div class="left__links">
         <div class="link__collection">
           <a href="http://127.0.0.1:5502/client/index.html#index.html">Home</a>
-          <a href="#product.html">Products</a>
+          <a href="http://127.0.0.1:5502/client/product.html">Products</a>
         </div>
       </div>
     </div>
