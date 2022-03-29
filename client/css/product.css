@@ -25,7 +25,7 @@
   border: 1px solid black;
   width: 80%;
   margin-right: 10%;
-  height: 100%;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,10 +34,9 @@
 }
 
 .container .container-right .carts {
+  margin-bottom: 1rem;
   width: 25%;
-  height: 100%;
-  border-bottom: dotted;
-  border: 1px solid red;
+  height: 25rem;
 }
 
 .container .container-right .carts .cart-up .img-container {

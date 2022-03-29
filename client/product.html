@@ -1,117 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/product.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+  </head>
+  <body>
     <nav class="navbar"></nav>
 
     <!-- product -->
     <div class="container">
-        <div class="container-left">
-            <div class="item 1">Fruits & Vegetables</div>
-            <div class="item 2">Bakery Cakes and Dairy</div>
-            <div class="item 3">Beverages</div>
-            <div class="item 4">Beauty and Hygiene</div>
-            <div class="item 5">Baby Care</div>
+      <div class="container-left">
+        <!-- <div class="item 1" id="">Fruits & Vegetables</div>
+        <div class="item 2" id="">Bakery Cakes and Dairy</div>
+        <div class="item 3" id="">Beverages</div>
+        <div class="item 4" id="">Beauty and Hygiene</div>
+        <div class="item 5" id="">Baby Care</div> -->
+      </div>
 
+      <!-- Dynamically inject HTML -->
+      <div class="container-right">
 
-
-        </div>
-        <div class="container-right">
-            <div class="carts">
-                <div class="cart-up">
-                    <p class="cart-heading">fresho kiwi - green, 3 pcs</p>
-                    <div class="img-container">
-                        <img src="../static/images/products/fruit-n-veg/kiwi-green.jpg" alt="">
-                    </div>
-                
-                <p class="cart-desc">kiwi are oval shaped with a brownish outer skin. the flesh is bright green and juicy with tiny,edible black seeds.</p>
-
-                </div>
-                <div class="cart-down">
-                    <span>MRP Rs 87 </span>
-                    <button class="cart-btn">Buy Now</button>
-                </div>
-                
-            </div>
-            <div class="carts">
-                <div class="cart-up">
-                    <p class="cart-heading">fresho kiwi - green, 3 pcs</p>
-                    <div class="img-container">
-                        <img src="../static/images/products/fruit-n-veg/kiwi-green.jpg" alt="">
-                    </div>
-                
-                <p class="cart-desc">kiwi are oval shaped with a brownish outer skin. the flesh is bright green and juicy with tiny,edible black seeds.</p>
-
-                </div>
-                <div class="cart-down">
-                    <span>MRP Rs 87 </span>
-                    <button class="cart-btn">Buy Now</button>
-                </div>
-                
-            </div>
-            <div class="carts">
-                <div class="cart-up">
-                    <p class="cart-heading">fresho kiwi - green, 3 pcs</p>
-                    <div class="img-container">
-                        <img src="../static/images/products/fruit-n-veg/kiwi-green.jpg" alt="">
-                    </div>
-                
-                <p class="cart-desc">kiwi are oval shaped with a brownish outer skin. the flesh is bright green and juicy with tiny,edible black seeds.</p>
-
-                </div>
-                <div class="cart-down">
-                    <span>MRP Rs 87 </span>
-                    <button class="cart-btn">Buy Now</button>
-                </div>
-                
-            </div>
-            <div class="carts">
-                <div class="cart-up">
-                    <p class="cart-heading">fresho kiwi - green, 3 pcs</p>
-                    <div class="img-container">
-                        <img src="../static/images/products/fruit-n-veg/kiwi-green.jpg" alt="">
-                    </div>
-                
-                <p class="cart-desc">kiwi are oval shaped with a brownish outer skin. the flesh is bright green and juicy with tiny,edible black seeds.</p>
-
-                </div>
-                <div class="cart-down">
-                    <span>MRP Rs 87 </span>
-                    <button class="cart-btn">Buy Now</button>
-                </div>
-                
-            </div>
-            <div class="carts">
-                <div class="cart-up">
-                    <p class="cart-heading">fresho kiwi - green, 3 pcs</p>
-                    <div class="img-container">
-                        <img src="../static/images/products/fruit-n-veg/kiwi-green.jpg" alt="">
-                    </div>
-                
-                <p class="cart-desc">kiwi are oval shaped with a brownish outer skin. the flesh is bright green and juicy with tiny,edible black seeds.</p>
-
-                </div>
-                <div class="cart-down">
-                    <span>MRP Rs 87 </span>
-                    <button class="cart-btn">Buy Now</button>
-                </div>
-                
-            </div>
-        </div>
+      </div>
     </div>
 
     <footer class="footer"></footer>
 
-
     <script src="./js/nav.js"></script>
     <script src="./js/footer.js"></script>
-    
-</body>
+    <script src="./js/fetchProducts.js"></script>
+  </body>
 </html>
