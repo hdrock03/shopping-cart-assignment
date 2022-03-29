@@ -7,7 +7,7 @@
 .container .container-left {
   margin-left: 10%;
   width: 20%;
-  height: 100%;
+  height: 100vh;
   background: #e5e5e5;
 }
 
@@ -22,10 +22,9 @@
 }
 
 .container .container-right {
-  border: 1px solid black;
   width: 80%;
   margin-right: 10%;
-  min-height: 90vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,11 +35,11 @@
 .container .container-right .carts {
   margin-bottom: 1rem;
   width: 25%;
-  height: 25rem;
+  height: 31rem;
 }
 
 .container .container-right .carts .cart-up .img-container {
-  height: 100%;
+  height: 15rem;
   width: 100%;
 }
 
@@ -57,12 +56,14 @@
   text-transform: none;
   font-size: small;
   font-weight: 540;
+  height: 9rem;
 }
 
 .container .container-right .carts .cart-up .cart-heading {
   text-align: center;
   font-weight: 600;
   text-transform: capitalize;
+  height: 4rem;
 }
 
 .container .container-right .carts .cart-down {

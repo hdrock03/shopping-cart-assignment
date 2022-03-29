@@ -196,6 +196,10 @@ body {
   right: 1rem;
 }
 
+.category__list {
+  margin: 0 10%;
+}
+
 .category__list .category {
   height: 25rem;
   display: -webkit-box;

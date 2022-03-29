@@ -106,6 +106,7 @@
         width: 100vw;
         height: 100vh;
         position: relative;
+        // margin: 0 10%;
       }
       
       .carousel > ul {
@@ -175,6 +176,7 @@
   //category list
   
   .category__list {
+    margin: 0 10%;
     .category {
       height: 25rem;
       display: flex;
