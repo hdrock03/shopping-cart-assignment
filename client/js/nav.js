@@ -1,6 +1,6 @@
-const createNav =() => {
-    let nav = document.querySelector('.navbar');
-    nav.innerHTML =`
+const createNav = () => {
+  let nav = document.querySelector(".navbar");
+  nav.innerHTML = `
     <div class="center">
     <div class="left">
       <div class="img__container">
@@ -27,5 +27,5 @@ const createNav =() => {
     </div>
   </div>
     `;
-}
+};
 createNav();

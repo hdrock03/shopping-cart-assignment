@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/register.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+  <body>
     <nav class="navbar"></nav>
 
     <!-- signup -->
     <div class="register">
-        <div class="register-left">
-            <span>Signup</span>
-            <p>we do not share your personal details with anyone</p>
-        </div>
-        <div class="register-right">
-            <form class="form" action="">
-                <label for="first"></label>
-                <input type="text" name="first" id="first" placeholder="First Name">
-                <br>
-                <label for="last"></label>
-                <input type="text" name="last" id="last" placeholder="Last Name">
-                <br>
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <br>
-                <label for="password"></label>
-                <input type="password" name="password" id="password" placeholder="Password">
-                <br>
-                <label for="confirm"></label>
-                <input type="password" name="confirm" id="confirm" placeholder="Confirm Password">
-                <br>
-                <button class="btn-signup">Signup</button>
-
-
-                
-            </form>
-        </div>
+      <div class="register-left">
+        <span>Signup</span>
+        <p>we do not share your personal details with anyone</p>
+      </div>
+      <div class="register-right">
+        <form class="form" action="" id="register-form">
+          <label for="first"></label>
+          <input type="text" name="first" id="first" placeholder="First Name" required />
+          <br />
+          <label for="last"></label>
+          <input type="text" name="last" id="last" placeholder="Last Name" required />
+          <br />
+          <label for="email"></label>
+          <input type="email" name="email" id="email" placeholder="Email" required />
+          <br />
+          <label for="password"></label>
+          <input type="password" name="password" id="password" placeholder="Password" required />
+          <br />
+          <label for="confirm"></label>
+          <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" required />
+          <br />
+          <button class="btn-signup" type="submit">Signup</button>
+        </form>
+      </div>
     </div>
 
     <footer class="footer"></footer>
@@ -47,6 +44,5 @@
     <script src="./js/nav.js"></script>
     <script src="./js/footer.js"></script>
     <script src="./js/register.js"></script>
-    
-</body>
+  </body>
 </html>

@@ -24,7 +24,7 @@ const fetchAllProducts = async () => {
                 </div>
           <div class="cart-down">
             <span>MRP Rs. ${item.price}</span>
-            <button class="cart-btn">Buy Now</button>
+            <button class="cart-btn" id=${item.id}>Buy Now</button>
           </div>
         </div>
 `;
@@ -32,6 +32,7 @@ const fetchAllProducts = async () => {
 
   // inject HTML inside targeted div
   divRight.innerHTML = html;
+  console.log("end2");
 };
 
 // Fetch all category from JSON
@@ -41,8 +42,6 @@ const fetchCategory = async () => {
 
   // initialize emtpy string
   let html = ``;
-
-  // const handleclick = () => console.log("ok");
 
   // map over data fetched from JSON file and add HTML content to above variable
   data.map((item, index) => {
@@ -57,13 +56,13 @@ const fetchCategory = async () => {
   // const nodeList = divLeft.childNodes;
   const nodeList = document.querySelectorAll(".item"); // always returns a nodelist
 
-  console.log(nodeList, "XXX");
-
   nodeList.forEach((item, index) => {
     item.addEventListener("click", e => {
       filterCategory(e.target.id); // e.target.id - categoryID
     });
   });
+
+  console.log("end1");
 };
 
 // function that filters products based on ID
@@ -102,5 +101,5 @@ const filterCategory = async categoryID => {
 };
 
 // call functions
-fetchAllProducts();
 fetchCategory();
+fetchAllProducts();
