@@ -12,6 +12,8 @@ const fetchAllProducts = async () => {
 
   // map over data fetched from JSON file and add HTML content to above variable
   data.forEach(item => {
+    // let dataObj = JSON.stringify(item);
+    
     html += `<div class="carts">
                 <div class="cart-up">
                     <p class="cart-heading">${item.name}</p>
@@ -24,7 +26,7 @@ const fetchAllProducts = async () => {
                 </div>
           <div class="cart-down">
             <span>MRP Rs. ${item.price}</span>
-            <button class="cart-btn" id=${item.id}>Buy Now</button>
+            <button onclick="addToCart(\'${item.name}\',\'${item.imageURL}\',\'${item.description}\',\'${item.id}\')" data = ${item} class="cart-btn" id=${item.id}>Buy Now</button>
           </div>
         </div>
 `;
@@ -100,6 +102,21 @@ const filterCategory = async categoryID => {
   divRight.innerHTML = html;
 };
 
-// call functions
+function addToCart (name,url,desc,id) {
+  let email=localStorage.getItem("email");
+  let userData= JSON.parse(localStorage.getItem(email));
+  let item = {
+    name: name,
+    imageURL: url,
+    description: desc,
+    id: id
+  }
+  userData.userCart=[...userData.userCart,item]
+  localStorage.setItem(email,JSON.stringify(userData));
+}
+
+// export default fetchAllProducts;
+
+// // call functions
 fetchCategory();
 fetchAllProducts();

@@ -5,9 +5,11 @@ const fetchCategory = async () => {
     const data = await jsonData.json();
 
     let html =``;
-
+let switchSide = false;
     data.forEach(item => {
-        html += `<div class="category one">
+      switchSide = !switchSide;
+      let classToAdd = switchSide?"one":"two";
+        html += `<div class='${classToAdd}'>
         <div class="img__container">
           <img src=${item.imageUrl} alt="" />
         </div>

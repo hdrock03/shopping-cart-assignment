@@ -267,4 +267,11 @@ body {
   background-color: #eee5e5;
   text-transform: capitalize;
 }
+.one{
+  display: flex;
+}
+ .two{
+  display: flex;
+  flex-direction: row-reverse;
+}
 /*# sourceMappingURL=style.css.map */

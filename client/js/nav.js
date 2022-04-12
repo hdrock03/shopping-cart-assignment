@@ -1,5 +1,8 @@
 const createNav = () => {
   let nav = document.querySelector(".navbar");
+  let data = JSON.parse(localStorage.getItem(localStorage.getItem("email")));
+  //console.log(data)
+  let cartLength = Object.keys(data.userCart).length;
   nav.innerHTML = `
     <div class="center">
     <div class="left">
@@ -20,9 +23,10 @@ const createNav = () => {
       </div>
       <div class="two">
         <div class="img__container">
-          <img src="../static/images/cart.svg" alt="" />
+        <a href="http://127.0.0.1:5502/client/cart.html"><img src="../static/images/cart.svg" alt="" /></a>
+          
         </div>
-        <span class="cart__count">0 items</span>
+        <span class="cart__count">${cartLength} items</span>
       </div>
     </div>
   </div>
