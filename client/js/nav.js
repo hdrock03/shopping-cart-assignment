@@ -1,8 +1,8 @@
 const createNav = () => {
   let nav = document.querySelector(".navbar");
-  let data = JSON.parse(localStorage.getItem(localStorage.getItem("email")));
-  //console.log(data)
-  let cartLength = Object.keys(data.userCart).length;
+  let data = JSON.parse(localStorage.getItem("userdata"));
+  // console.log(data.userCart)
+  let cartLength = data.userCart.length;
   nav.innerHTML = `
     <div class="center">
     <div class="left">

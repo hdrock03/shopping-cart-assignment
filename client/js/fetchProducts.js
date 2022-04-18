@@ -102,17 +102,21 @@ const filterCategory = async categoryID => {
   divRight.innerHTML = html;
 };
 
+//application mei jsske "userData" nikslo
+//  usi userDatat k object mei "item " ko insert karo
+//updated userData ko wapas application(local torage mei push lardo)
 function addToCart (name,url,desc,id) {
-  let email=localStorage.getItem("email");
-  let userData= JSON.parse(localStorage.getItem(email));
+  // let userdata=localStorage.getItem("userdata");
+  let userData= JSON.parse(localStorage.getItem("userdata"));
   let item = {
     name: name,
     imageURL: url,
     description: desc,
     id: id
   }
+  
   userData.userCart=[...userData.userCart,item]
-  localStorage.setItem(email,JSON.stringify(userData));
+  localStorage.setItem("userdata",JSON.stringify(userData));
 }
 
 // export default fetchAllProducts;

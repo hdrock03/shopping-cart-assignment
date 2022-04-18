@@ -24,7 +24,7 @@ form.addEventListener("submit", e => {
     userCart: [],
   };
   localStorage.setItem("email",`${email.value}`)
-  localStorage.setItem(`${email.value}`, JSON.stringify(userData));
+  localStorage.setItem("userdata", JSON.stringify(userData));
 
   window.location.replace("http://127.0.0.1:5502/client/index.html");
 });
