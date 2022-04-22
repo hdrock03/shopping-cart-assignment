@@ -16,7 +16,8 @@ let switchSide = false;
         <div class="category__desc">
             <span class="category__desc_1">${item.name}</span>
             <p>${item.description}</p>
-            <button class="btn-one">${item.key}</button>
+            <a href="http://127.0.0.1:5502/client/product.html?product=${item.key}" class="btn-one">${item.key}</a>
+            
         </div>
       </div>
       `;
@@ -25,7 +26,7 @@ let switchSide = false;
     category.innerHTML = html;
     
 }
-
+{/* <button class="btn-one">${item.key}</button> */}
 // const fetchCorousel = async () => {
 //     let jsonData = await fetch("../server/banners/index.get.json");
 //     const data = await jsonData.json();
